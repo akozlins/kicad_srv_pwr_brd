@@ -1,4 +1,212 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x03_Male J01
+U 1 1 60666E19
+P 2000 2500
+F 0 "J01" H 2108 2781 50  0000 R CNN
+F 1 "SRV1_in" H 2108 2690 50  0000 R CNN
+F 2 "" H 2000 2500 50  0001 C CNN
+F 3 "~" H 2000 2500 50  0001 C CNN
+	1    2000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J02
+U 1 1 60668680
+P 3000 2500
+F 0 "J02" H 3108 2781 50  0000 R CNN
+F 1 "SRV2_in" H 3108 2690 50  0000 R CNN
+F 2 "" H 3000 2500 50  0001 C CNN
+F 3 "~" H 3000 2500 50  0001 C CNN
+	1    3000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J03
+U 1 1 6066BA58
+P 4000 2500
+F 0 "J03" H 4108 2781 50  0000 R CNN
+F 1 "SRV3_in" H 4108 2690 50  0000 R CNN
+F 2 "" H 4000 2500 50  0001 C CNN
+F 3 "~" H 4000 2500 50  0001 C CNN
+	1    4000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2400 2200 2000
+Wire Wire Line
+	2200 2000 3200 2000
+Wire Wire Line
+	3200 2000 3200 2400
+Wire Wire Line
+	4200 2400 4200 2000
+Wire Wire Line
+	4200 2000 3200 2000
+Connection ~ 3200 2000
+$Comp
+L power:GND #PWR?
+U 1 1 60675D09
+P 5000 2000
+F 0 "#PWR?" H 5000 1750 50  0001 C CNN
+F 1 "GND" H 5005 1827 50  0000 C CNN
+F 2 "" H 5000 2000 50  0001 C CNN
+F 3 "" H 5000 2000 50  0001 C CNN
+	1    5000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2000 5000 2000
+Connection ~ 4200 2000
+Wire Wire Line
+	2200 2500 2500 2500
+Wire Wire Line
+	2500 2500 2500 1500
+Wire Wire Line
+	2500 1500 3500 1500
+Wire Wire Line
+	3500 1500 3500 2500
+Wire Wire Line
+	3500 2500 3200 2500
+Wire Wire Line
+	4200 2500 4500 2500
+Wire Wire Line
+	4500 2500 4500 1500
+Wire Wire Line
+	4500 1500 3500 1500
+Connection ~ 3500 1500
+$Comp
+L power:+5V #PWR?
+U 1 1 6067C393
+P 5000 1500
+F 0 "#PWR?" H 5000 1350 50  0001 C CNN
+F 1 "+5V" H 5015 1673 50  0000 C CNN
+F 2 "" H 5000 1500 50  0001 C CNN
+F 3 "" H 5000 1500 50  0001 C CNN
+	1    5000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1500 4500 1500
+Connection ~ 4500 1500
+$Comp
+L Connector:Conn_01x03_Male J11
+U 1 1 6067E2A9
+P 2500 4000
+F 0 "J11" H 2472 3932 50  0000 R CNN
+F 1 "SRV1_out" H 2472 4023 50  0000 R CNN
+F 2 "" H 2500 4000 50  0001 C CNN
+F 3 "~" H 2500 4000 50  0001 C CNN
+	1    2500 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J12
+U 1 1 60680EB4
+P 3500 4000
+F 0 "J12" H 3472 3932 50  0000 R CNN
+F 1 "SRV2_out" H 3472 4023 50  0000 R CNN
+F 2 "" H 3500 4000 50  0001 C CNN
+F 3 "~" H 3500 4000 50  0001 C CNN
+	1    3500 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J13
+U 1 1 606811AD
+P 4500 4000
+F 0 "J13" H 4472 3932 50  0000 R CNN
+F 1 "SRV3_out" H 4472 4023 50  0000 R CNN
+F 2 "" H 4500 4000 50  0001 C CNN
+F 3 "~" H 4500 4000 50  0001 C CNN
+	1    4500 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 5000 3300 5000
+Wire Wire Line
+	3300 4000 3000 4000
+Wire Wire Line
+	3000 4500 4000 4500
+Wire Wire Line
+	4000 4500 4000 4000
+Wire Wire Line
+	4000 4000 4300 4000
+Wire Wire Line
+	2300 4000 2000 4000
+Wire Wire Line
+	2000 4500 3000 4500
+Connection ~ 3000 4500
+Wire Wire Line
+	2300 5000 1500 5000
+Connection ~ 2300 5000
+Wire Wire Line
+	2000 4500 1500 4500
+Connection ~ 2000 4500
+Wire Wire Line
+	3300 5000 4300 5000
+Connection ~ 3300 5000
+$Comp
+L power:GND #PWR?
+U 1 1 60691096
+P 1500 5000
+F 0 "#PWR?" H 1500 4750 50  0001 C CNN
+F 1 "GND" H 1505 4827 50  0000 C CNN
+F 2 "" H 1500 5000 50  0001 C CNN
+F 3 "" H 1500 5000 50  0001 C CNN
+	1    1500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 606916D3
+P 1500 4500
+F 0 "#PWR?" H 1500 4350 50  0001 C CNN
+F 1 "+BATT" H 1515 4673 50  0000 C CNN
+F 2 "" H 1500 4500 50  0001 C CNN
+F 3 "" H 1500 4500 50  0001 C CNN
+	1    1500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4000 2000 4500
+Wire Wire Line
+	3000 4000 3000 4500
+Wire Wire Line
+	4300 4100 4300 5000
+Wire Wire Line
+	3300 4100 3300 5000
+Wire Wire Line
+	2300 4100 2300 5000
+Wire Wire Line
+	2200 2600 2250 2600
+Wire Wire Line
+	2250 2600 2250 3900
+Wire Wire Line
+	2250 3900 2300 3900
+Wire Wire Line
+	3200 2600 3250 2600
+Wire Wire Line
+	3250 2600 3250 3900
+Wire Wire Line
+	3250 3900 3300 3900
+Wire Wire Line
+	4200 2600 4250 2600
+Wire Wire Line
+	4250 2600 4250 3900
+Wire Wire Line
+	4250 3900 4300 3900
 $EndSCHEMATC
