@@ -19,7 +19,7 @@ U 1 1 60666E19
 P 2000 2500
 F 0 "J01" H 2108 2781 50  0000 R CNN
 F 1 "SRV1_in" H 2108 2690 50  0000 R CNN
-F 2 "" H 2000 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2000 2500 50  0001 C CNN
 F 3 "~" H 2000 2500 50  0001 C CNN
 	1    2000 2500
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 60668680
 P 3000 2500
 F 0 "J02" H 3108 2781 50  0000 R CNN
 F 1 "SRV2_in" H 3108 2690 50  0000 R CNN
-F 2 "" H 3000 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3000 2500 50  0001 C CNN
 F 3 "~" H 3000 2500 50  0001 C CNN
 	1    3000 2500
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 6066BA58
 P 4000 2500
 F 0 "J03" H 4108 2781 50  0000 R CNN
 F 1 "SRV3_in" H 4108 2690 50  0000 R CNN
-F 2 "" H 4000 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4000 2500 50  0001 C CNN
 F 3 "~" H 4000 2500 50  0001 C CNN
 	1    4000 2500
 	1    0    0    -1  
@@ -108,7 +108,7 @@ U 1 1 6067E2A9
 P 2500 4000
 F 0 "J11" H 2472 3932 50  0000 R CNN
 F 1 "SRV1_out" H 2472 4023 50  0000 R CNN
-F 2 "" H 2500 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2500 4000 50  0001 C CNN
 F 3 "~" H 2500 4000 50  0001 C CNN
 	1    2500 4000
 	-1   0    0    1   
@@ -119,7 +119,7 @@ U 1 1 60680EB4
 P 3500 4000
 F 0 "J12" H 3472 3932 50  0000 R CNN
 F 1 "SRV2_out" H 3472 4023 50  0000 R CNN
-F 2 "" H 3500 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3500 4000 50  0001 C CNN
 F 3 "~" H 3500 4000 50  0001 C CNN
 	1    3500 4000
 	-1   0    0    1   
@@ -130,7 +130,7 @@ U 1 1 606811AD
 P 4500 4000
 F 0 "J13" H 4472 3932 50  0000 R CNN
 F 1 "SRV3_out" H 4472 4023 50  0000 R CNN
-F 2 "" H 4500 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4500 4000 50  0001 C CNN
 F 3 "~" H 4500 4000 50  0001 C CNN
 	1    4500 4000
 	-1   0    0    1   
@@ -141,8 +141,6 @@ Wire Wire Line
 	3300 4000 3000 4000
 Wire Wire Line
 	3000 4500 4000 4500
-Wire Wire Line
-	4000 4500 4000 4000
 Wire Wire Line
 	4000 4000 4300 4000
 Wire Wire Line
@@ -209,4 +207,29 @@ Wire Wire Line
 	4250 2600 4250 3900
 Wire Wire Line
 	4250 3900 4300 3900
+$Comp
+L Connector:Conn_01x02_Male J10
+U 1 1 606CCF94
+P 5500 4100
+F 0 "J10" H 5472 3982 50  0000 R CNN
+F 1 "BATT" H 5472 4073 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 4100 50  0001 C CNN
+F 3 "~" H 5500 4100 50  0001 C CNN
+	1    5500 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 4500 4000 4000
+Wire Wire Line
+	4000 4500 5000 4500
+Wire Wire Line
+	5000 4500 5000 4000
+Wire Wire Line
+	5000 4000 5300 4000
+Connection ~ 4000 4500
+Wire Wire Line
+	5300 4100 5300 5000
+Wire Wire Line
+	5300 5000 4300 5000
+Connection ~ 4300 5000
 $EndSCHEMATC
